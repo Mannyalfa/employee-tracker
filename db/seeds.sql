@@ -1,12 +1,12 @@
 USE employees;
 
-INSERT INTO department (name) VALUES 
+INSERT INTO department (dept_name) VALUES 
     ("Sales"),
     ("Engineering"),
     ("Finance"),
     ("Legal");
 
-INSERT INTO roles (title, salary, department_id) VALUES
+INSERT INTO role (title, salary, department_id) VALUES
     ("Sales Lead", 100000, 1),
     ("Salesperson", 80000, 1),
     ("Lead Engineer", 150000, 2),
@@ -24,7 +24,7 @@ INSERT INTO employee (first_name, last_name, role_id) VALUES
     ("Sarah", "Lourd", 6),
     ("Tom", "Allen", 7);
 
-UPDATE employee SET manager_id = 3 WHERE id = 1;
-UPDATE employee SET manager_id = 1 WHERE id = 2;
-UPDATE employee SET manager_id = 3 WHERE id = 4;
-UPDATE employee SET manager_id = 6 WHERE id = 7;
+UPDATE employee SET manager_id = 3 WHERE role_id = 1;
+UPDATE employee SET manager_id = 1 WHERE role_id = 2;
+UPDATE employee SET manager_id = 3 WHERE role_id= 4;
+UPDATE employee SET manager_id = 6 WHERE role_id= 7;
