@@ -15,16 +15,21 @@ INSERT INTO role (title, salary, department_id) VALUES
     ("Legal Team Lead", 250000, 4),
     ("Lawyer", 190000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id) VALUES
-    ("John", "Doe", 1),
-    ("Mike", "Chan", 2),
-    ("Ashley", "Rodriguez", 3),
-    ("Kevin", "Tupik", 4),
-    ("Malia", "Brown", 5),
-    ("Sarah", "Lourd", 6),
-    ("Tom", "Allen", 7);
+INSERT INTO employee (first_name, last_name, id, role_id) VALUES
+    ("John", "Doe", 1, 1),
+    ("Mike", "Chan", 2, 1),
+    ("Ashley", "Rodriguez", 3, 2),
+    ("Kevin", "Tupik", 4, 3),
+    ("Malia", "Brown", 6, 4),
+    ("Sarah", "Lourd", 7, 4),
+    ("Tom", "Allen", 8, 4);
+    ("Christian", "Eckenrode", 9, 2);
+    ("Tanner", "Galal", 10, 2);
 
-UPDATE employee SET manager_id = 3 WHERE role_id = 1;
-UPDATE employee SET manager_id = 1 WHERE role_id = 2;
-UPDATE employee SET manager_id = 3 WHERE role_id= 4;
-UPDATE employee SET manager_id = 6 WHERE role_id= 7;
+
+UPDATE employee SET manager_id = 3 WHERE id = 1;
+UPDATE employee SET manager_id = 1 WHERE id = 2;
+UPDATE employee SET manager_id = 3 WHERE id= 4;
+UPDATE employee SET manager_id = 7 WHERE id= 8;
+UPDATE employee SET manager_id = 7 WHERE id= 9;
+UPDATE employee SET manager_id = 3 WHERE id= 10;

@@ -8,7 +8,7 @@ const chalk = require('chalk');
 
     console.log(chalk.blueBright.bold(figlet.textSync('Employee Tracker')));
     console.log(``);
-    console.log(`                                                          ` + chalk.white.bold('by: Manny Alfaro'));
+    console.log(`                                                          ` + chalk.bgBlue(chalk.whiteBright('by: Manny Alfaro')));
    
     init();
 function init() {
@@ -77,7 +77,7 @@ async function viewAllDepartments() {
 async function addDepartment() {
     const department = await inquirer.prompt({
         type: "input",
-        message: "What is the name of the department?",
+        message: "Department name:",
         name: "name",
     });
     await dbQuery.createDepartment(department);
@@ -184,7 +184,7 @@ async function updateEmployee() {
         {
             type: "list",
             name: "roleId",
-            message: "EMployee's new role:",
+            message: "Employee's new role:",
             choices: rolesOptionsToChooseFrom,
         },
     ]);
