@@ -67,8 +67,10 @@ Application requires no installation
 ## License
 MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Image
-![screenshot]()
+## Images
+![screenshot](https://github.com/Mannyalfa/employee-tracker/blob/main/images/db_schema.png)
+
+![screenshot](https://github.com/Mannyalfa/employee-tracker/blob/main/images/screenshot.png)
 
 ## Languages/Applications
 JavaScript, Node.js, Express.js, MYSQL2
