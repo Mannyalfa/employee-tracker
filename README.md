@@ -59,7 +59,11 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 
 ## Installation
-Application requires no installation
+run mpm init --y
+
+npm install express, sequelize, mysql2, source db/schema.sql, USE employee node server.js
+
+source 
 
 ## Usage
 
