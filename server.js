@@ -95,7 +95,7 @@ async function addEmployee() {
         },
         {
             type: "input",
-            message: "Employe last name:",
+            message: "Employee last name:",
             name: "last_name",
         },
     ]);

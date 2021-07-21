@@ -4,15 +4,15 @@ USE employees;
 
 CREATE TABLE department (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
-  dept_name VARCHAR(30) UNIQUE NOT NULL
+  department_name VARCHAR(30) NOT NULL
 );
 CREATE TABLE role (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) UNIQUE NOT NULL,
-  salary DECIMAL(6) NOT NULL,
-  dept_id INTEGER NOT NULL,
-  INDEX dept_id (dept_id),
- -- CONSTRAINT fk_department FOREIGN KEY (dept_id) REFERENCES department(id) ON DELETE CASCADE
+  salary DECIMAL(10,2) NOT NULL,
+  department_id INTEGER NOT NULL,
+  INDEX department_id (department_id),
+ CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
 );
 CREATE TABLE employee (
   id INT AUTO_INCREMENT PRIMARY KEY,
