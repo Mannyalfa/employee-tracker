@@ -63,11 +63,6 @@ run mpm init --y
 
 npm install express, sequelize, mysql2, source db/schema.sql, USE employee node server.js
 
-source 
-
-## Usage
-
-
 ## License
 MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -77,7 +72,7 @@ MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https
 ![screenshot](https://github.com/Mannyalfa/employee-tracker/blob/main/images/screenshot.png)
 
 ## Languages/Applications
-JavaScript, Node.js, Express.js, MYSQL2
+JavaScript, Node.js, Express.js, MYSQL, Inquirer
 
 ## Repository URL
 https://github.com/Mannyalfa/employee-tracker
