@@ -83,8 +83,7 @@ JavaScript, Node.js, Express.js, MYSQL2
 https://github.com/Mannyalfa/employee-tracker
 
 ## Walkthrough Video
-https://drive.google.com/file/d/17OotDDY9_2a2MFOT8szVNlFTOkVcx0wE/view?usp=sharing
-
+https://drive.google.com/file/d/1bk4baqZGo7jtPnc4NYOimf1uGevT8g8d/view?usp=sharing
     
 ## Credits
 Manny Alfaro
